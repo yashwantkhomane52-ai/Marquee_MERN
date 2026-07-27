@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 100px);
+  /* What is the Difference Btweeen Cells and Items */
+  /* grid-row and grid-col */
+  /* grid-template-areas:; */
+}
+
+/* Different Color to each Items  */
+#item-1 {
+  background-color: orangered;
+  grid-column: span 5;
+}
+#item-2 {
+  background-color: rgb(245, 245, 249);
+  grid-column: span 2;
+}
+#item-3 {
+  background-color: rgb(3, 72, 23);
+  grid-column: span 5;
+}
+#item-4 {
+  background-color: rgb(29, 9, 110);
+  grid-column: 3/4;
+  grid-row: 2;
+  border-radius: 50%;
+
+}
+
+.items {
+  background-color: antiquewhite;
+}

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items-Alignment</title>
+    <style>
+      body {
+        /* height: 100vw;
+        width: 100vh; */
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(3, 250px);
+        gap: 10px;
+      }
+      #item-1 {
+        background-color: rgb(145, 20, 145);
+        grid-row: span 2;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+      }
+      #item-2 {
+        background-color: rgb(191, 167, 157);
+        grid-column: span 2;
+        border-radius: 10px;
+        display: flex;
+        padding: 20px;
+      }
+      #item-3 {
+        background-color: greenyellow;
+        grid-column: 2/2;
+        border-radius: 10px;
+        align-items: center;
+        justify-items: center;
+        padding: 5px;
+        text-align: center;
+      }
+      #item-4 {
+        background-color: rgb(226, 255, 63);
+        grid-column: 3/3;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      #item-5 {
+        background-color: rgb(226, 154, 47);
+        grid-column: span 2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+      }
+      #item-6 {
+        background-color: rgb(40, 143, 186);
+        grid-column: span 1;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .gift p {
+        bottom: 10px;
+      }
+      img {
+        border-radius: 5px;
+        backface-visibility: hidden;
+      }
+      .blank {
+        position: absolute;
+        height: 50px;
+        width: 250px;
+        background-color: rgb(41, 98, 183);
+        left: -20px;
+        bottom: 105px;
+        border-radius: 5px;
+      }
+      #item-1 p {
+        position: absolute;
+        bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="items" id="item-1">
+        <h2>Customization</h2>
+        <img
+          src="ChatGPT Image Jul 27, 2026, 12_57_02 PM.png"
+          alt=""
+          height="250px"
+          width="200px"
+        />
+        <div class="blank">
+          <img
+            src="https://github.com/Akarshio/gridTemp/blob/main/images/Frame%2017.png?raw=true"
+            alt=""
+            height="50px"
+            width="250px"
+          />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
+          sapiente similique, dolorum omnis deleniti magnam.
+        </p>
+      </div>
+      <div class="items" id="item-2">
+        <div>
+          <h2>Scheduling</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatum, ab.
+          </p>
+        </div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3C_OqKfkzT_baoGV-dT6bV-DIZ9NjVtFLGWCRKbumej_fUQND9HZTFBs&s=10"
+          alt=""
+          height="180px"
+          width="250px"
+          style="background-color: rgb(184, 70, 114); border-radius: 5px"
+        />
+      </div>
+      <div class="items" id="item-3">
+        <div style="align-items: center">
+          <img
+            src="https://github.com/Akarshio/gridTemp/blob/main/images/Frame%2035%20(1).png?raw=true"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <!-- <h2>Wallet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magni?
+        </p> -->
+      </div>
+      <div class="items" id="item-4">
+        <h2>Inbox</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          quasi.
+        </p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqohQmZMuLqy_aKewoYeL48uVMzcCDcnHKfNl2pqweAvVVavjPZQ_cq_o&s=10"
+          alt=""
+          height="100px"
+          width="200px"
+        />
+      </div>
+      <div class="items" id="item-5">
+        <div class="gift">
+          <h2>Send Gifts</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, fugit.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://github.com/Akarshio/gridTemp/blob/main/images/Frame%2052%20(1).png?raw=true"
+            alt=""
+            height="250px"
+            width="250px"
+          />
+        </div>
+      </div>
+      <div class="items" id="item-6">
+        <h2>Reminders</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, saepe.
+        </p>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3_HpRR9jfJOORxYf3-7npfO-6xGf4YjWJT9Wap_PBYdjqsJmCHpsq0pm&s=10"
+            alt=""
+            height="100px"
+            width="220px"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
